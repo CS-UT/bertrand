@@ -1,0 +1,24 @@
+{
+  "name": "bertrand-csut",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Interactive Persian RTL simulation of Bertrand's paradox.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "katex": "^0.16.28"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "globals": "^16.5.0",
+    "vite": "^7.3.1"
+  }
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f2f2f2" />
+  <meta name="description" content="شبیه‌سازی تعاملی پارادوکس برتراند با سه روش انتخاب وتر تصادفی." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="پارادوکس برتراند — شبیه‌سازی وتر تصادفی" />
+  <meta property="og:description" content="مقایسهٔ تجربی سه روش انتخاب وتر تصادفی در پارادوکس برتراند." />
+  <meta property="og:url" content="https://bertrand.csut.ir/" />
+  <link rel="canonical" href="https://bertrand.csut.ir/" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>پارادوکس برتراند — شبیه‌سازی وتر تصادفی</title>
+</head>
+<body>
+  <header>
+    <div class="headerTop">
+      <div class="logoGroup" aria-label="لوگوها">
+        <a class="logo" href="#" aria-label="لوگو ۱">
+          <img src="/logo.png" alt="لوگو ۱" />
+        </a>
+        <a class="logo" href="#" aria-label="لوگو ۲">
+          <img src="/logo2.png" alt="لوگو ۲" />
+        </a>
+      </div>
+
+      <div class="headerText">
+        <h1>پارادوکس برتراند — شبیه‌سازی سه روش انتخاب وتر تصادفی</h1>
+      </div>
+    </div>
+
+    <div class="controls">
+      <label>
+        تعداد وترها (N):
+        <input id="nInput" type="number" min="1" step="1" value="200" />
+      </label>
+
+      <button id="goBtn" type="button">برو</button>
+
+      <div class="hint">
+        اگر تعداد وترها بیش از ۱۰۰۰ باشد فقط ۱۰۰۰ وتر رسم می‌شود.
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid">
+      <section class="card">
+        <h2>روش ۱</h2>
+        <div class="canvWrap">
+          <canvas id="c1"></canvas>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول وترها (دایره‌ی اصلی)</div>
+            <canvas id="h1"></canvas>
+          </div>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول بخش داخل دایره‌ی کوچک / r (فقط وترهای برخوردی)</div>
+            <canvas id="h1i"></canvas>
+          </div>
+        </div>
+        <div class="stats" id="s1"></div>
+      </section>
+
+      <section class="card">
+        <h2>روش ۲</h2>
+        <div class="canvWrap">
+          <canvas id="c2"></canvas>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول وترها (دایره‌ی اصلی)</div>
+            <canvas id="h2"></canvas>
+          </div>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول بخش داخل دایره‌ی کوچک / r (فقط وترهای برخوردی)</div>
+            <canvas id="h2i"></canvas>
+          </div>
+        </div>
+        <div class="stats" id="s2"></div>
+      </section>
+
+      <section class="card">
+        <h2>روش ۳</h2>
+        <div class="canvWrap">
+          <canvas id="c3"></canvas>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول وترها (دایره‌ی اصلی)</div>
+            <canvas id="h3"></canvas>
+          </div>
+
+          <div class="histSection">
+            <div class="histCaption">توزیع طول بخش داخل دایره‌ی کوچک / r (فقط وترهای برخوردی)</div>
+            <canvas id="h3i"></canvas>
+          </div>
+        </div>
+        <div class="stats" id="s3"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    تهیه شده توسط انجمن علوم کامپیوتر دانشگاه تهران
+  </footer>
+
+
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
