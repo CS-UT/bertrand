@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/Vazirmatn.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
     :root{
       --bg: #f2f2f2;
       --panel: #ffffff;
@@ -25,7 +33,7 @@
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: "BYekan", Tahoma, Arial, sans-serif;
+      font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
       text-align: right;
     }
 
@@ -99,7 +107,7 @@
 
     h1{
       margin: 0;
-      font-family: "BTitr", "B Titr", "B Nazanin", "BNazanin", "BYekan", Tahoma, Arial, sans-serif;
+      font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
       font-size: 28px;
       font-weight: 900;
       line-height: 1.35;
